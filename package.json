@@ -1,18 +1,14 @@
 {
   "name": "paginationjs",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "A jQuery plugin to provide simple yet fully customisable pagination",
   "main": "dist/pagination.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "push": "grunt && git tag 2.1.5 && npm publish",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "grunt"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/superRaytin/paginationjs"
+    "url": "https://github.com/philmottin/paginationjs"
   },
   "keywords": [
     "paginationjs",
@@ -21,17 +17,18 @@
     "jquery.pagination",
     "jquery pagination"
   ],
-  "author": "superRaytin",
+  "author": "philmottin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/superRaytin/paginationjs/issues"
+    "url": "https://github.com/philmottin/paginationjs/issues"
   },
   "homepage": "http://pagination.js.org",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-uglify": "~0.4",
+    "grunt-cli": "^1.4.3",
     "grunt-contrib-copy": "~0.8.2",
+    "grunt-contrib-cssmin": "~0.14.0",
     "grunt-contrib-less": "~1.0.1",
-    "grunt-contrib-cssmin": "~0.14.0"
+    "grunt-contrib-uglify": "~0.4"
   }
 }

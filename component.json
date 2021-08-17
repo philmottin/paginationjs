@@ -1,7 +1,7 @@
 {
     "name": "paginationjs",
-    "version": "2.1.5",
-    "repo": "superRaytin/paginationjs",
+    "version": "2.1.6",
+    "repo": "philmottin/paginationjs",
     "description": "A jQuery plugin to provide simple yet fully customisable pagination",
     "keywords": [
         "paginationjs",

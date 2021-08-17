@@ -1,7 +1,7 @@
 /*
- * pagination.js 2.1.5
+ * pagination.js 2.1.6
  * A jQuery plugin to provide simple yet fully customisable pagination.
- * https://github.com/superRaytin/paginationjs
+ * https://github.com/philmottin/paginationjs
  *
  * Homepage: http://pagination.js.org
  *
@@ -605,7 +605,9 @@
         if (Helpers.isObject(dataSource)) {
           try {
             $.each(locator.split('.'), function(index, item) {
-              filteredData = (filteredData ? filteredData : dataSource)[item];
+              //filteredData = (filteredData ? filteredData : dataSource)[item];
+              var data = filteredData ? filteredData : dataSource;
+              filteredData = data[item]?data[item]:[];
             });
           }
           catch (e) {
